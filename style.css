@@ -1,0 +1,367 @@
+@font-face {
+  font-family: Centar;
+  src: url('fonts/CentarRegular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: YK;
+  src: url('fonts/YanoneKaffeesatz-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: YK;
+  src: url('fonts/YanoneKaffeesatz-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Market;
+  src: url('fonts/Market Fresh.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Market;
+  src: url('fonts/Market Fresh Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  display: grid;
+  grid-template-areas:
+  ". header"
+  ". content"
+  ". footer";
+  grid-template-rows: auto auto 200px;
+  grid-template-columns: 250px 1fr;
+}
+
+h1{
+  font-family: YK;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+h2{
+  font-family: YK;
+  font-size: 2.4rem;
+  letter-spacing: 0.07rem;
+  font-weight: 700;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header{
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7dca0;
+  min-height: 60px;
+}
+
+.header__menu{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 70%;
+  margin-left: 30px;
+}
+
+.header__item{
+  font-family: Market;
+  font-weight: 400;
+  text-decoration: none;
+  color: #AAAA99;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  padding: 0 10px;
+}
+
+.header__phoneNumber{
+  font-family: Centar;
+  font-size: 1.5rem;
+  margin-right: 30px;
+}
+
+.sideBar{
+  /*grid-area: sideBar;*/
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #7D1A2C;
+}
+
+.sideBar__logo{
+  padding: 20px;
+  display: block;
+}
+
+.sideBar__menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.sideBar__menu a:nth-child(1){
+  background: url('img/sideBar__icon_1.png') 0 0 no-repeat;
+}
+
+.sideBar__menu a:nth-child(2){
+  background: url('img/sideBar__icon_2.png') 0 0 no-repeat;
+}
+
+.sideBar__menu a:nth-child(3){
+  background: url('img/sideBar__icon_3.png') 0 0 no-repeat;
+}
+
+.sideBar__menu a:nth-child(4){
+  background: url('img/sideBar__icon_4.png') 0 0 no-repeat;
+}
+
+.sideBar__menu a:hover{
+  background-position: left center;
+}
+
+.sideBar__item{
+  height: 50px;
+  padding-left: 70px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Market;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.content{
+  grid-area: content;
+}
+
+.content__slider{
+  position: relative;
+}
+
+.content__slider::before{
+  content: '<';
+  position: absolute;
+  top: 40%;
+  left: 0;
+}
+
+.content__slider::after{
+  content: '>';
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.content__slider::after, .content__slider::before{
+  font-family: Market;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0 15px;
+  color: #FFFFFF;
+  background-color: #555555;
+}
+
+.content__banner{
+  width: 100%;
+  display: block;
+}
+
+.content__features{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f7dca0;
+}
+
+.content__stickers{
+  margin: 20px 0;
+  display: block;
+}
+
+.content__title{
+  text-align: center;
+  margin: 60px 0 40px 0;
+}
+
+.productCard{
+  padding-bottom: 30px;
+  border-bottom: 1px #BBBBBB solid;
+  margin: 0 50px 20px 50px;
+}
+
+.productCard__image_alingLeft{
+  margin: 15px 50px 0 0;
+    float: left;
+}
+.productCard__image_alingRight{
+  margin: 15px 0 0 50px;
+    float: right;
+}
+
+.productCard__title{
+  display: inline;
+}
+
+.productCard__description{
+  font-family: Centar;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+
+.productCard__button{
+  background-color: #f41d4f;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Centar;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  margin-top: 25px;
+}
+
+.footer{
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 25px 0;
+}
+
+.footer__contacts{
+  display: flex;
+  flex-direction: column;
+  font-family: Centar;
+  font-size: 0.9rem;
+  margin-left: 50px;
+}
+
+.footer__adress{
+  background: url('img/location.png') left center no-repeat;
+  background-size: 30px;
+  padding-left: 45px;
+}
+
+.footer__phoneNumber{
+  height: 30px;
+  line-height: 30px;
+  background: url('img/call.png') left center no-repeat;
+  background-size: 30px;
+  padding-left: 45px;
+  margin-top: 20px;
+}
+
+.footer__email{
+  height: 30px;
+  line-height: 30px;
+  background: url('img/email.png') left center no-repeat;
+  background-size: 30px;
+  padding-left: 45px;
+  margin-top: 20px;
+}
+
+.footer__menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 40%;
+}
+
+.footer__item{
+  width: 200px;
+  font-family: Market;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  color: #000000;
+}
+
+.footer__menu a:nth-child(n+3){
+  margin-top: 20px;
+}
+
+.footer__copyright{
+  font-family: Centar;
+  font-size: 0.9rem;
+  margin-right: 50px;
+  align-self: flex-end;
+}
+
+
+
+@media all and (max-width: 1000px) {
+  html{
+    font-size: 12px;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header{
+    margin-top: 100px;
+  }
+
+  .sideBar{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    flex-direction: row;
+  }
+
+  .sideBar__logo{
+    max-width: 150px;
+    padding:0 0 0 20px;
+  }
+
+  .sideBar__menu{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 25px;
+  }
+
+  .sideBar__item{
+    margin: 0;
+    padding-left: 60px;
+  }
+}
