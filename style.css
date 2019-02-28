@@ -343,11 +343,11 @@ h2{
   .sideBar{
     flex-order: -1;
     position: relative;
-    width: 100%;
+    width: 100vw;
   }
 
   .sideBar__menu{
-    /*padding: 0;*/
+    padding: 0;
   }
 
   .content__slider{
