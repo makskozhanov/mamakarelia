@@ -354,6 +354,15 @@ h2{
     display: none;
   }
   
+  .content__features{
+    overflow: hidden;
+  }
+
+  .productCard{
+    display: flex;
+    flex-direction: column;
+  }
+  
   .footer{
     flex-direction: column;
     justify-content: space-around;
