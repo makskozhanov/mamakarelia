@@ -383,8 +383,8 @@ h2{
   }
 
   .sideBar__cart{
-    padding-left: 100px;
-    align-self: flex-start;
+    width: 100%;
+    align-self: center;
   }
 
 
