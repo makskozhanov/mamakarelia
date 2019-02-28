@@ -328,7 +328,7 @@ h2{
 
 @media all and (max-width: 1000px) {
   html{
-    font-size: 12px;
+    font-size: 24px;
   }
 
   body{
@@ -337,31 +337,20 @@ h2{
   }
 
   .header{
-    margin-top: 100px;
+    display: none;
   }
 
   .sideBar{
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100px;
-    flex-direction: row;
-  }
-
-  .sideBar__logo{
-    max-width: 150px;
-    padding:0 0 0 20px;
+    flex-order: -1;
+    position: relative;
+    width: 100%;
   }
 
   .sideBar__menu{
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    margin-left: 25px;
+    /*padding: 0;*/
   }
 
-  .sideBar__item{
-    margin: 0;
-    padding-left: 60px;
+  .content__slider{
+    display: none;
   }
 }
