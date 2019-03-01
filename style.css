@@ -362,6 +362,7 @@ h2{
     position: relative;
     width: 100%;
     height: auto;
+    padding-bottom: 50px;
   }
 
   .sideBar__logo{
@@ -386,7 +387,6 @@ h2{
   .sideBar__cart{
     text-align: center;
     align-self: center;
-    margin-bottom: 50px;
   }
 
 
