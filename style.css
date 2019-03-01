@@ -361,6 +361,7 @@ h2{
     align-items: flex-start;
     position: relative;
     width: 100%;
+    height: auto;
   }
 
   .sideBar__logo{
@@ -385,6 +386,7 @@ h2{
   .sideBar__cart{
     text-align: center;
     align-self: center;
+    margin-bottom: 50px;
   }
 
 
