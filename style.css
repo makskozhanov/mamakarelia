@@ -1,35 +1,23 @@
 @font-face {
-  font-family: Centar;
-  src: url('fonts/CentarRegular.otf');
+  font-family: Vollkorn;
+/*src: url('fonts/CentarRegular.otf');*/
+  src: url('fonts/Vollkorn-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: YK;
-  src: url('fonts/YanoneKaffeesatz-Bold.otf');
+  font-family: NextArt;
+  /*src: url('fonts/YanoneKaffeesatz-Bold.otf');*/
+  src: url('fonts/NEXT ART_Bold.otf');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: YK;
-  src: url('fonts/YanoneKaffeesatz-Light.otf');
+  font-family: Montserrat;
+  src: url('fonts/Montserrat-Medium.ttf');
   font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Market;
-  src: url('fonts/Market Fresh.otf');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Market;
-  src: url('fonts/Market Fresh Bold.ttf');
-  font-weight: 700;
   font-style: normal;
 }
 
@@ -54,15 +42,15 @@ body{
 }
 
 h1{
-  font-family: YK;
-  font-size: 3.2rem;
+  font-family: NextArt;
+  font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
 }
 
 h2{
-  font-family: YK;
-  font-size: 2.4rem;
+  font-family: NextArt;
+  font-size: 2rem;
   letter-spacing: 0.07rem;
   font-weight: 700;
 }
@@ -92,18 +80,17 @@ h2{
 }
 
 .header__item{
-  font-family: Market;
-  font-weight: 400;
+  font-family: Montserrat;
+  font-weight: 300;
   text-decoration: none;
-  color: #AAAA99;
-  font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-  padding: 0 10px;
+  color: #000000;
+  font-size: 0.9rem;
+  padding: 0 20px;
 }
 
 .header__phoneNumber{
-  font-family: Centar;
-  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-size: 1.3rem;
   margin-right: 30px;
 }
 
@@ -115,11 +102,12 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
   background-color: #7D1A2C;
 }
 
 .sideBar__logo{
-  padding: 30px;
+  padding: 30px 0;
   display: block;
 }
 
@@ -127,7 +115,6 @@ h2{
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0 30px;
 }
 
 .sideBar__menu a:nth-child(1){
@@ -152,25 +139,24 @@ h2{
 
 .sideBar__item{
   height: 50px;
-  padding-left: 70px;
+  padding-left: 65px;
   margin: 15px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: Market;
-  font-weight: 400;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
   text-decoration: none;
   color: #FFFFFF;
 }
 
 .sideBar__cart{
-  margin-top: 50px;
-  font-family: Market;
-  font-weight: 400;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
+  margin-top: 100px;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #540c19;
 }
@@ -198,10 +184,10 @@ h2{
 }
 
 .content__slider::after, .content__slider::before{
-  font-family: Market;
-  font-size: 2rem;
+  font-family: Vollkorn;
+  font-size: 2.5rem;
   font-weight: 400;
-  padding: 0 15px;
+  padding: 0 10px;
   color: #FFFFFF;
   background-color: #555555;
 }
@@ -250,22 +236,23 @@ h2{
 }
 
 .productCard__description{
-  font-family: Centar;
+  font-family: Vollkorn;
   font-size: 1.2rem;
   line-height: 1.7rem;
   padding-right: 30px;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
+  margin-top: 20px;
 }
 
 .productCard__button{
   background-color: #f41d4f;
   border-radius: 5px;
   color: #FFFFFF;
-  font-family: Centar;
+  font-family: Montserrat;
   font-size: 1.2rem;
   padding: 15px 30px;
   border: none;
-  margin-top: 25px;
+  margin-top: 45px;
   max-width: 80%;
 }
 
@@ -275,12 +262,12 @@ h2{
   justify-content: space-between;
   align-items: flex-start;
   margin: 25px 0;
+  font-family: Montserrat;
 }
 
 .footer__contacts{
   display: flex;
   flex-direction: column;
-  font-family: Centar;
   font-size: 0.9rem;
   margin-left: 50px;
 }
@@ -319,9 +306,8 @@ h2{
 }
 
 .footer__item{
-  font-family: Market;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.05rem;
   color: #000000;
 }
@@ -335,9 +321,9 @@ h2{
 }
 
 .footer__copyright{
-  font-family: Centar;
   font-size: 0.9rem;
   margin-right: 50px;
+  align-self: flex-end;
 }
 
 
