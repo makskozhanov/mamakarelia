@@ -86,6 +86,12 @@ h2{
   color: #000000;
   font-size: 0.9rem;
   padding: 0 20px;
+  transition: all 0.1s linear;
+}
+
+.header__item:hover{
+  color:rgb(201, 0, 30);
+  transform: scale(1.1);
 }
 
 .header__phoneNumber{
@@ -330,12 +336,16 @@ h2{
 
 @media all and (max-width: 1000px) {
   html{
-    font-size: 14px;
+    /*font-size: 20px;*/
   }
 
   body{
     display: flex;
     flex-direction: column;
+  }
+
+  h1{
+    font-size: 2rem;
   }
 
   .header{
