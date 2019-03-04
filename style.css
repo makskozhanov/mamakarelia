@@ -348,8 +348,8 @@ h2{
     font-size: 1.8rem;
   }
   
-  h3{
-    font-size: 1.3rem;
+  h2{
+    font-size: 1.4rem;
   }
 
   .header{
@@ -461,5 +461,4 @@ h2{
     padding-left: 45px;
     margin: 50px 0 0 0;
   }
-
 }
